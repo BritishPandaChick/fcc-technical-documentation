@@ -1,0 +1,155 @@
+#main-doc {
+  margin-left: 200px;
+}
+
+/* Nav Bar */
+#navbar {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+  border-right: solid;
+  border-color: #000;
+}
+
+#navbar header {
+  font-size: 22px;
+}
+
+@media (max-width: 300px) {
+  header {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  ul li {
+    font-size: 16px;
+  }
+}
+
+/* Bootstrap Grid System */
+#Bootstrap_Grid_System {
+  height: 450px;
+}
+
+#Bootstrap_Grid_System header {
+  font-size: 42px;
+  padding: 15px 0;
+}
+
+#Bootstrap_Grid_System p {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+#Bootstrap_Grid_System h3 {
+  font-size: 32px;
+}
+
+#Bootstrap_Grid_System ul li {
+  font-size: 20px;
+}
+
+/* Bootstrap Typography */
+#Bootstrap_Typography {
+  height: 450px;
+}
+
+#Bootstrap_Typography header {
+  font-size: 42px;
+  padding: 15px 0;
+}
+
+#Bootstrap_Typography p {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+#Bootstrap_Typography h3 {
+  font-size: 32px;
+}
+
+#Bootstrap_Typography ul li {
+  font-size: 20px;
+}
+
+/* Bootstrap Tables */
+#Bootstrap_Tables {
+  height: 350px;
+}
+
+#Bootstrap_Tables header {
+  font-size: 42px;
+  padding: 15px 0;
+}
+
+#Bootstrap_Tables p {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+#Bootstrap_Tables h3 {
+  font-size: 32px;
+}
+
+#Bootstrap_Tables ul li {
+  font-size: 20px;
+}
+
+/* Bootstrap Images */
+#Bootstrap_Images {
+  height: 550px;
+}
+
+#Bootstrap_Images header {
+  font-size: 42px;
+  padding: 15px 0;
+}
+
+#Bootstrap_Images p {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+#Bootstrap_Images h3 {
+  font-size: 32px;
+  padding: 15px 0;
+}
+
+#Bootstrap_Images ul li {
+  font-size: 20px;
+}
+
+/* Bootstrap Jumbotron */
+#Bootstrap_Jumbotron {
+  height: 450px;
+}
+
+#Bootstrap_Jumbotron header {
+  font-size: 42px;
+  padding: 15px 0;
+}
+
+#Bootstrap_Jumbotron p {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+#Bootstrap_Jumbotron h3 {
+  font-size: 32px;
+}
+
+#Bootstrap_Jumbotron ul li {
+  font-size: 20px;
+}

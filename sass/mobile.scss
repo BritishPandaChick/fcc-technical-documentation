@@ -1,0 +1,79 @@
+/*=== Sass Variables === */
+$headline-font: "Arial", sans-serif;
+$main-font: "Courier New", serif;
+$black: #333;
+
+/*== Base Styles ==*/ 
+body {
+    font-family: $main-font;
+    font-size: 20px;
+    color: $black;
+    display: flex;
+    flex-direction: column;
+}
+
+/*== Grid System ==*/ 
+.full-width {
+    width: 100%; 
+    margin: 0 auto;
+}
+
+/*== Navbar ==*/ 
+#navbar {
+    border: 2px solid $black; 
+    padding: 15px 0;
+    height: 470px;
+
+    header {
+        text-align: center;
+        font-family: $headline-font;
+        font-size: 35px;
+    }
+
+    ul {
+        padding: 40px;
+    }
+
+    ul li {
+        list-style-type: none;
+        padding: 10px;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: $black;
+    }
+}
+
+/*== Sections == */ 
+#main-doc {
+    padding: 40px 0;
+
+    h2 {
+        font-family: $headline-font;
+        text-align: center;
+        font-size: 30px;
+    }
+}
+
+#Introducing_JSX {
+    border: 2px solid red;
+    padding: 40px 0;
+    width: 100%;
+
+    header {
+        font-family: $headline-font;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    ul {
+        padding: 15px 45px;
+
+        li {
+            font-size: 20px;
+            line-height: 32px;
+            font-family: $main-font;
+        }
+    }
+}

@@ -3,168 +3,172 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Free Code Camp Technical Documentation Page</title>
+    <title>React Technical Documentation Page</title>
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" media="screen and (min-width: 1025px)" type="text/css" href="/css/style.css">
-    <!-- <link href="css/mobile.css" media="screen and (max-width: 640px)" rel="stylesheet">
-    <link href="css/tablet.css" media="screen and (min-width: 641px) and (max-width: 1024px)" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" media="screen and (min-width: 1025px)" type="text/css" href="/css/style.css"> -->
+    <link href="css/mobile.css" media="screen and (max-width: 640px)" rel="stylesheet">
+    <!-- <link href="css/tablet.css" media="screen and (min-width: 641px) and (max-width: 1024px)" rel="stylesheet"> -->
   </head>
   <body>
-    <main id="main-doc">
-      <h2>Introducing JSX</h2>
-      <section class="main-section" id="Introducing_JSX">
-        <header>Introducing JSX</header>
-        <ul>
-          <li>Mrs. Gardiner, to whom the chief of this news had been given before, in the course of Jane and Elizabeth’s correspondence with her, made her sister a slight answer, and, in compassion to her nieces, turned the conversation.</li>
-          <li>Mrs. Gardiner, to whom the chief of this news had been given before, in the course of Jane and Elizabeth’s correspondence with her, made her sister a slight answer, and, in compassion to her nieces, turned the conversation.</li>
-        </ul>
-        <div class="sub-section">          
-          <h3>Consider this variable declaration:</h3>
-          <br>
-          <code>
-            const element = <h1>Hello, world!</h1>;
-          </code>
-          <br>
-          <p>This funny tag syntax is neither a string nor HTML.</p>
-          <p>It is called JSX, and it is a syntax extension to JavaScript. We recommend using it with React to describe what the UI should look like. JSX may remind you of a template language, but it comes with the full power of JavaScript.</p>
-          <p>JSX produces React “elements”. Below, you can find the basics of JSX necessary to get you started.</p>
-        </div>
-        
-        <div class="sub-section">
-          <h4>Why JSX?</h4>
-          <p>React embraces the fact that rendering logic is inherently coupled with other UI logic: how events are handled, how the state changes over time, and how the data is prepared for display.</p>
-          <p>Instead of artificially separating technologies by putting markup and logic in separate files, React separates concerns with loosely coupled units called “components” that contain both.</p>
-          <p>React doesn’t require using JSX, but most people find it helpful as a visual aid when working with UI inside the JavaScript code. It also allows React to show more useful error and warning messages.</p>
-        </div>
-      </section>
-
-      <section class="main-section" id="Embedding_Expressions_in_JSX">
-        <header>Embedding Expressions in JSX</header>
-        <ul>
-          <li>Mrs. Gardiner, to whom the chief of this news had been given before, in the course of Jane and Elizabeth’s correspondence with her, made her sister a slight answer, and, in compassion to her nieces, turned the conversation.</li>
-          <li>Mrs. Gardiner, to whom the chief of this news had been given before, in the course of Jane and Elizabeth’s correspondence with her, made her sister a slight answer, and, in compassion to her nieces, turned the conversation.</li>
-        </ul>
-        <div class="sub-section">          
-          <p>In the example below, we declare a variable called name and then use it inside JSX by wrapping it in curly braces:</p>
-          <br>
-          <code>
-            const name = 'Josh Perez';
-            const element = <h1>Hello, {name}</h1>;
-          </code>
-          <br>
-          <p>You can put any valid JavaScript expression inside the curly braces in JSX. For example, 2 + 2, user.firstName, or formatName(user) are all valid JavaScript expressions.</p>
-          <p>In the example below, we embed the result of calling a JavaScript function, formatName(user), into an h1 element.</p>
-          <br>
-          <code>
-            function formatName(user) {
-              return user.firstName + ' ' + user.lastName;
-            }
-            
-            const user = {
-              firstName: 'Harper',
-              lastName: 'Perez'
-            };
-            
-            const element = (
-              <h1>
-                Hello, {formatName(user)}!
-              </h1>
-            );
-          </code>
-          <br>
-          <p>We split JSX over multiple lines for readability. While it isn’t required, when doing this, we also recommend wrapping it in parentheses to avoid the pitfalls of automatic semicolon insertion.</p>
-        </div>
-      </section>
-
-      <section class="main-section" id="JSX_is_an_Expression_Too">
-        <header>JSX is an Expression Too</header>
-        <ul>
-          <li>Mrs. Gardiner, to whom the chief of this news had been given before, in the course of Jane and Elizabeth’s correspondence with her, made her sister a slight answer, and, in compassion to her nieces, turned the conversation.</li>
-          <li>Mrs. Gardiner, to whom the chief of this news had been given before, in the course of Jane and Elizabeth’s correspondence with her, made her sister a slight answer, and, in compassion to her nieces, turned the conversation.</li>
-        </ul>
-        <div class="sub-section">          
-          <p>After compilation, JSX expressions become regular JavaScript function calls and evaluate to JavaScript objects.</p>
-          <p>This means that you can use JSX inside of if statements and for loops, assign it to variables, accept it as arguments, and return it from functions:</p>
-          <br>
-          <code>
-            function getGreeting(user) {
-              if (user) {
-                return <h1>Hello, {formatName(user)}!</h1>;
-              }
-              return <h1>Hello, Stranger.</h1>;
-            }
-          </code>
-          <br>
-        </div>
-      </section>
-
-      <section class="main-section" id="Specifying_Attributes_with_JSX">
-        <header>Specifying Attributes with JSX</header>
-        <ul>
-          <li>Mrs. Gardiner, to whom the chief of this news had been given before, in the course of Jane and Elizabeth’s correspondence with her, made her sister a slight answer, and, in compassion to her nieces, turned the conversation.</li>
-          <li>Mrs. Gardiner, to whom the chief of this news had been given before, in the course of Jane and Elizabeth’s correspondence with her, made her sister a slight answer, and, in compassion to her nieces, turned the conversation.</li>
-        </ul>
-        <div class="sub-section">          
-          <p>You may use quotes to specify string literals as attributes:</p>
-          <br>
-          <code>
-            const element = <a href="https://www.reactjs.org"> link </a>;
-          </code>
-          <br>
-          <p>You may also use curly braces to embed a JavaScript expression in an attribute:</p>
-          <br>
-          <code>
-            const element = <img src={user.avatarUrl}></img>;
-          </code>
-          <br>
-          <p>Don’t put quotes around curly braces when embedding a JavaScript expression in an attribute. You should either use quotes (for string values) or curly braces (for expressions), but not both in the same attribute.</p>
-        </div>
-
-        <div class="warning">
-          <h4>Warning:</h4>
-          <p>Since JSX is closer to JavaScript than to HTML, React DOM uses camelCase property naming convention instead of HTML attribute names.</p>
-          <p>For example, class becomes className in JSX, and tabindex becomes tabIndex.</p>
-        </div>
-      </section>
-
-      <section class="main-section" id="Specifying_Children_with_JSX">
-        <header>Specifying Children with JSX</header>
-        <ul>
-          <li>Mrs. Gardiner, to whom the chief of this news had been given before, in the course of Jane and Elizabeth’s correspondence with her, made her sister a slight answer, and, in compassion to her nieces, turned the conversation.</li>
-          <li>Mrs. Gardiner, to whom the chief of this news had been given before, in the course of Jane and Elizabeth’s correspondence with her, made her sister a slight answer, and, in compassion to her nieces, turned the conversation.</li>
-        </ul>
-        <div class="sub-section">          
-          <p>If a tag is empty, you may close it immediately with />, like XML:</p>
-          <br>
-          <code>
-            const element = <img src={user.avatarUrl} />;
-          </code>
-          <br>
-          <p>JSX tags may contain children:</p>
-          <br>
-          <code>
-            const element = (
-              <div>
-                <h1>Hello!</h1>
-                <h2>Good to see you here.</h2>
-              </div>
-            );
-          </code>
-          <br>
-        </div>        
-      </section>
-    </main>
-
     <nav id="navbar">
-      <header>React.js Documentation</header>
-      <a class="nav-link" href="#Introducing_JSX">Introducing JSX</a>
-      <a class="nav-link" href="#Embedding_Expressions_in_JSX">Embedding Expressions in JSX</a>
-      <a class="nav-link" href="#JSX_is_an_Expression_Too">JSX is an Expression Too</a>
-      <a class="nav-link" href="#Specifying_Attributes_with_JSX">Specifying Attributes with JSX</a>
-      <a class="nav-link" href="#Specifying_Children_with_JSX">Specifying Children with JSX</a>
+      <div class="full-width">
+        <header>React.js Documentation</header>
+
+        <ul>
+          <li><a class="nav-link" href="#Introducing_JSX">Introducing JSX</a></li>
+          <li><a class="nav-link" href="#Embedding_Expressions_in_JSX">Embedding Expressions in JSX</a></li>
+          <li><a class="nav-link" href="#JSX_is_an_Expression_Too">JSX is an Expression Too</a></li>
+          <li><a class="nav-link" href="#Specifying_Attributes_with_JSX">Specifying Attributes with JSX</a></li>
+          <li><a class="nav-link" href="#Specifying_Children_with_JSX">Specifying Children with JSX</a></li>
+        </ul>
+      </div>
     </nav>
 
+    <main id="main-doc">
+      <div class="full-width">
+        <h2>Introducing JSX</h2>
+        <section class="main-section" id="Introducing_JSX">
+          <header>Introducing JSX</header>
+          <ul>
+            <li>Mrs. Gardiner, to whom the chief of this news had been given before, in the course of Jane and Elizabeth’s correspondence with her, made her sister a slight answer, and, in compassion to her nieces, turned the conversation.</li>
+            <li>Mrs. Gardiner, to whom the chief of this news had been given before, in the course of Jane and Elizabeth’s correspondence with her, made her sister a slight answer, and, in compassion to her nieces, turned the conversation.</li>
+          </ul>
+
+          <div class="sub-section">          
+            <p>Consider this variable declaration:</p>
+            <code>const element = <h1>Hello, world!</h1>;</code>
+            <p>This funny tag syntax is neither a string nor HTML.</p>
+            <p>It is called JSX, and it is a syntax extension to JavaScript. We recommend using it with React to describe what the UI should look like. JSX may remind you of a template language, but it comes with the full power of JavaScript.</p>
+            <p>JSX produces React “elements”. Below, you can find the basics of JSX necessary to get you started.</p>
+          </div>
+          
+          <div class="sub-section">
+            <h4>Why JSX?</h4>
+            <p>React embraces the fact that rendering logic is inherently coupled with other UI logic: how events are handled, how the state changes over time, and how the data is prepared for display.</p>
+            <p>Instead of artificially separating technologies by putting markup and logic in separate files, React separates concerns with loosely coupled units called “components” that contain both.</p>
+            <p>React doesn’t require using JSX, but most people find it helpful as a visual aid when working with UI inside the JavaScript code. It also allows React to show more useful error and warning messages.</p>
+          </div>
+        </section>
+  
+        <section class="main-section" id="Embedding_Expressions_in_JSX">
+          <header>Embedding Expressions in JSX</header>
+          <ul>
+            <li>Mrs. Gardiner, to whom the chief of this news had been given before, in the course of Jane and Elizabeth’s correspondence with her, made her sister a slight answer, and, in compassion to her nieces, turned the conversation.</li>
+            <li>Mrs. Gardiner, to whom the chief of this news had been given before, in the course of Jane and Elizabeth’s correspondence with her, made her sister a slight answer, and, in compassion to her nieces, turned the conversation.</li>
+          </ul>
+          <div class="sub-section">          
+            <p>In the example below, we declare a variable called name and then use it inside JSX by wrapping it in curly braces:</p>
+            <br>
+            <code>
+              const name = 'Josh Perez';
+              const element = <h1>Hello, {name}</h1>;
+            </code>
+            <br>
+            <p>You can put any valid JavaScript expression inside the curly braces in JSX. For example, 2 + 2, user.firstName, or formatName(user) are all valid JavaScript expressions.</p>
+            <p>In the example below, we embed the result of calling a JavaScript function, formatName(user), into an h1 element.</p>
+            <br>
+            <code>
+              function formatName(user) {
+                return user.firstName + ' ' + user.lastName;
+              }
+              
+              const user = {
+                firstName: 'Harper',
+                lastName: 'Perez'
+              };
+              
+              const element = (
+                <h1>
+                  Hello, {formatName(user)}!
+                </h1>
+              );
+            </code>
+            <br>
+            <p>We split JSX over multiple lines for readability. While it isn’t required, when doing this, we also recommend wrapping it in parentheses to avoid the pitfalls of automatic semicolon insertion.</p>
+          </div>
+        </section>
+  
+        <section class="main-section" id="JSX_is_an_Expression_Too">
+          <header>JSX is an Expression Too</header>
+          <ul>
+            <li>Mrs. Gardiner, to whom the chief of this news had been given before, in the course of Jane and Elizabeth’s correspondence with her, made her sister a slight answer, and, in compassion to her nieces, turned the conversation.</li>
+            <li>Mrs. Gardiner, to whom the chief of this news had been given before, in the course of Jane and Elizabeth’s correspondence with her, made her sister a slight answer, and, in compassion to her nieces, turned the conversation.</li>
+          </ul>
+          <div class="sub-section">          
+            <p>After compilation, JSX expressions become regular JavaScript function calls and evaluate to JavaScript objects.</p>
+            <p>This means that you can use JSX inside of if statements and for loops, assign it to variables, accept it as arguments, and return it from functions:</p>
+            <br>
+            <code>
+              function getGreeting(user) {
+                if (user) {
+                  return <h1>Hello, {formatName(user)}!</h1>;
+                }
+                return <h1>Hello, Stranger.</h1>;
+              }
+            </code>
+            <br>
+          </div>
+        </section>
+  
+        <section class="main-section" id="Specifying_Attributes_with_JSX">
+          <header>Specifying Attributes with JSX</header>
+          <ul>
+            <li>Mrs. Gardiner, to whom the chief of this news had been given before, in the course of Jane and Elizabeth’s correspondence with her, made her sister a slight answer, and, in compassion to her nieces, turned the conversation.</li>
+            <li>Mrs. Gardiner, to whom the chief of this news had been given before, in the course of Jane and Elizabeth’s correspondence with her, made her sister a slight answer, and, in compassion to her nieces, turned the conversation.</li>
+          </ul>
+          <div class="sub-section">          
+            <p>You may use quotes to specify string literals as attributes:</p>
+            <br>
+            <code>
+              const element = <a href="https://www.reactjs.org"> link </a>;
+            </code>
+            <br>
+            <p>You may also use curly braces to embed a JavaScript expression in an attribute:</p>
+            <br>
+            <code>
+              const element = <img src={user.avatarUrl}></img>;
+            </code>
+            <br>
+            <p>Don’t put quotes around curly braces when embedding a JavaScript expression in an attribute. You should either use quotes (for string values) or curly braces (for expressions), but not both in the same attribute.</p>
+          </div>
+  
+          <div class="warning">
+            <h4>Warning:</h4>
+            <p>Since JSX is closer to JavaScript than to HTML, React DOM uses camelCase property naming convention instead of HTML attribute names.</p>
+            <p>For example, class becomes className in JSX, and tabindex becomes tabIndex.</p>
+          </div>
+        </section>
+  
+        <section class="main-section" id="Specifying_Children_with_JSX">
+          <header>Specifying Children with JSX</header>
+          <ul>
+            <li>Mrs. Gardiner, to whom the chief of this news had been given before, in the course of Jane and Elizabeth’s correspondence with her, made her sister a slight answer, and, in compassion to her nieces, turned the conversation.</li>
+            <li>Mrs. Gardiner, to whom the chief of this news had been given before, in the course of Jane and Elizabeth’s correspondence with her, made her sister a slight answer, and, in compassion to her nieces, turned the conversation.</li>
+          </ul>
+          <div class="sub-section">          
+            <p>If a tag is empty, you may close it immediately with />, like XML:</p>
+            <br>
+            <code>
+              const element = <img src={user.avatarUrl} />;
+            </code>
+            <br>
+            <p>JSX tags may contain children:</p>
+            <br>
+            <code>
+              const element = (
+                <div>
+                  <h1>Hello!</h1>
+                  <h2>Good to see you here.</h2>
+                </div>
+              );
+            </code>
+            <br>
+          </div>        
+        </section>
+      </div>      
+    </main>
+    
     <!-- FreeCodeCamp Testing -->
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>

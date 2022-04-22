@@ -52,19 +52,24 @@ body {
       line-height: 32px;
       font-family: "Courier New", serif;
       padding: 15px 0; }
-  .main-section code {
-    font-size: 18px;
-    font-family: monospace;
-    padding: 15px; }
+  .main-section .code {
+    background-color: #333;
+    color: lightgreen;
+    border-radius: 5%;
+    padding: 15px;
+    width: 100%; }
+    .main-section .code code {
+      font-size: 18px;
+      font-family: monospace; }
   .main-section p {
     line-height: 32px;
     padding: 15px; }
-  .main-section h4 {
-    font-size: 20px;
-    font-family: "Arial", sans-serif;
-    text-align: center; }
-
-#Embedding_Expressions_in_JSX code {
-  border: 2px solid red; }
+  .main-section .warning {
+    background-color: yellow;
+    padding: 20px; }
+    .main-section .warning h4 {
+      font-size: 20px;
+      font-family: "Arial", sans-serif;
+      text-align: center; }
 
 /*# sourceMappingURL=mobile.css.map */

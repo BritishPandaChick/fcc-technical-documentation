@@ -20,9 +20,9 @@ body {
 
 /*== Navbar ==*/ 
 #navbar {
-    border: 2px solid $black; 
-    padding: 15px 0;
-    height: 470px;
+    border: 2px solid blue; 
+    padding: 40px 0;
+    height: 400px;
 
     header {
         text-align: center;
@@ -46,17 +46,13 @@ body {
 }
 
 /*== Sections == */ 
-#main-doc {
-    padding: 40px 0;
-
-    h2 {
-        font-family: $headline-font;
-        text-align: center;
-        font-size: 30px;
-    }
+#main-doc h2 {
+    font-family: $headline-font;
+    font-size: 30px;
+    text-align: center;
 }
 
-.main-section {
+#Introducing_JSX {
     padding: 40px 0;
     width: 100%;
 
@@ -73,28 +69,155 @@ body {
             font-size: 20px;
             line-height: 32px;
             font-family: $main-font;
-            padding: 15px 0;
-        }
-    }
-
-    .code {
-        background-color: $black;
-        color: lightgreen;
-        border-radius: 5%;
-        padding: 15px;
-        width: 100%;
-
-        code {
-            font-size: 18px;
-            font-family: monospace;
         }
     }
 
     p {
         line-height: 32px;
         padding: 15px;
-    }     
+    } 
 
+    .code {
+        background-color: $black;
+        color: lightgreen;
+        border-radius: 5%;
+        padding: 10px;
+        width: 109%;
+
+        code {
+            font-size: 15px;
+            font-family: monospace;
+        }
+    }
+
+    .sub-section {
+        h4 {
+            text-align: center;
+            font-family: $headline-font;
+            font-size: 20px;
+        }
+    }
+}
+
+#Embedding_Expressions_in_JSX {
+    padding: 40px 0;
+    width: 100%;
+
+    header {
+        font-family: $headline-font;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    ul {
+        padding: 15px 45px;
+
+        li {
+            font-size: 20px;
+            line-height: 32px;
+            font-family: $main-font;
+        }
+    }
+
+    p {
+        line-height: 32px;
+        padding: 15px;
+    } 
+
+    .code {
+        background-color: $black;
+        color: lightgreen;
+        border-radius: 5%;
+        padding: 10px;
+        width: 100%;
+
+        code {
+            font-size: 15px;
+            font-family: monospace;
+        }
+    }
+}
+
+#JSX_is_an_Expression_Too {
+    padding: 40px 0;
+    width: 100%;
+
+    header {
+        font-family: $headline-font;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    ul {
+        padding: 15px 45px;
+
+        li {
+            font-size: 20px;
+            line-height: 32px;
+            font-family: $main-font;
+        }
+    }
+
+    p {
+        line-height: 32px;
+        padding: 15px;
+    } 
+
+    .code {
+        background-color: $black;
+        color: lightgreen;
+        border-radius: 5%;
+        padding: 10px;
+        width: 100%;
+
+        code {
+            font-size: 15px;
+            font-family: monospace;
+        }
+    }
+}
+
+#Specifying_Attributes_with_JSX {
+    border: 2px solid red;
+    padding: 40px 0;
+    width: 100%;
+
+    header {
+        font-family: $headline-font;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    ul {
+        padding: 15px 45px;
+
+        li {
+            font-size: 20px;
+            line-height: 32px;
+            font-family: $main-font;
+        }
+    }
+
+    p {
+        line-height: 32px;
+        padding: 15px;
+    } 
+
+    .code {
+        background-color: $black;
+        color: lightgreen;
+        border-radius: 5%;
+        padding: 10px;
+        width: 100%;
+
+        code {
+            font-size: 15px;
+            font-family: monospace;
+        }
+    }
+}
+
+/*.
     .warning {
         background-color: yellow;
         padding: 20px;
@@ -104,5 +227,15 @@ body {
             font-family: $headline-font;
             text-align: center;
         }
+    }
+} */
+
+footer {
+    padding: 15px 0;
+    border: 2px solid blue;
+
+    p {
+        text-align: center;
+        font-size: 16px;
     }
 }

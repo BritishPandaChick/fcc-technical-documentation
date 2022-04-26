@@ -14,9 +14,9 @@ body {
 
 /*== Navbar ==*/
 #navbar {
-  border: 2px solid #333;
-  padding: 15px 0;
-  height: 470px; }
+  border: 2px solid blue;
+  padding: 40px 0;
+  height: 400px; }
   #navbar header {
     text-align: center;
     font-family: "Arial", sans-serif;
@@ -31,45 +31,137 @@ body {
     color: #333; }
 
 /*== Sections == */
-#main-doc {
-  padding: 40px 0; }
-  #main-doc h2 {
-    font-family: "Arial", sans-serif;
-    text-align: center;
-    font-size: 30px; }
+#main-doc h2 {
+  font-family: "Arial", sans-serif;
+  font-size: 30px;
+  text-align: center; }
 
-.main-section {
+#Introducing_JSX {
   padding: 40px 0;
   width: 100%; }
-  .main-section header {
+  #Introducing_JSX header {
     font-family: "Arial", sans-serif;
     font-size: 25px;
     text-align: center; }
-  .main-section ul {
+  #Introducing_JSX ul {
     padding: 15px 45px; }
-    .main-section ul li {
+    #Introducing_JSX ul li {
       font-size: 20px;
       line-height: 32px;
-      font-family: "Courier New", serif;
-      padding: 15px 0; }
-  .main-section .code {
+      font-family: "Courier New", serif; }
+  #Introducing_JSX p {
+    line-height: 32px;
+    padding: 15px; }
+  #Introducing_JSX .code {
     background-color: #333;
     color: lightgreen;
     border-radius: 5%;
-    padding: 15px;
-    width: 100%; }
-    .main-section .code code {
-      font-size: 18px;
+    padding: 10px;
+    width: 109%; }
+    #Introducing_JSX .code code {
+      font-size: 15px;
       font-family: monospace; }
-  .main-section p {
+  #Introducing_JSX .sub-section h4 {
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    font-size: 20px; }
+
+#Embedding_Expressions_in_JSX {
+  padding: 40px 0;
+  width: 100%; }
+  #Embedding_Expressions_in_JSX header {
+    font-family: "Arial", sans-serif;
+    font-size: 25px;
+    text-align: center; }
+  #Embedding_Expressions_in_JSX ul {
+    padding: 15px 45px; }
+    #Embedding_Expressions_in_JSX ul li {
+      font-size: 20px;
+      line-height: 32px;
+      font-family: "Courier New", serif; }
+  #Embedding_Expressions_in_JSX p {
     line-height: 32px;
     padding: 15px; }
-  .main-section .warning {
-    background-color: yellow;
-    padding: 20px; }
-    .main-section .warning h4 {
+  #Embedding_Expressions_in_JSX .code {
+    background-color: #333;
+    color: lightgreen;
+    border-radius: 5%;
+    padding: 10px;
+    width: 100%; }
+    #Embedding_Expressions_in_JSX .code code {
+      font-size: 15px;
+      font-family: monospace; }
+
+#JSX_is_an_Expression_Too {
+  padding: 40px 0;
+  width: 100%; }
+  #JSX_is_an_Expression_Too header {
+    font-family: "Arial", sans-serif;
+    font-size: 25px;
+    text-align: center; }
+  #JSX_is_an_Expression_Too ul {
+    padding: 15px 45px; }
+    #JSX_is_an_Expression_Too ul li {
       font-size: 20px;
-      font-family: "Arial", sans-serif;
-      text-align: center; }
+      line-height: 32px;
+      font-family: "Courier New", serif; }
+  #JSX_is_an_Expression_Too p {
+    line-height: 32px;
+    padding: 15px; }
+  #JSX_is_an_Expression_Too .code {
+    background-color: #333;
+    color: lightgreen;
+    border-radius: 5%;
+    padding: 10px;
+    width: 100%; }
+    #JSX_is_an_Expression_Too .code code {
+      font-size: 15px;
+      font-family: monospace; }
+
+#Specifying_Attributes_with_JSX {
+  border: 2px solid red;
+  padding: 40px 0;
+  width: 100%; }
+  #Specifying_Attributes_with_JSX header {
+    font-family: "Arial", sans-serif;
+    font-size: 25px;
+    text-align: center; }
+  #Specifying_Attributes_with_JSX ul {
+    padding: 15px 45px; }
+    #Specifying_Attributes_with_JSX ul li {
+      font-size: 20px;
+      line-height: 32px;
+      font-family: "Courier New", serif; }
+  #Specifying_Attributes_with_JSX p {
+    line-height: 32px;
+    padding: 15px; }
+  #Specifying_Attributes_with_JSX .code {
+    background-color: #333;
+    color: lightgreen;
+    border-radius: 5%;
+    padding: 10px;
+    width: 100%; }
+    #Specifying_Attributes_with_JSX .code code {
+      font-size: 15px;
+      font-family: monospace; }
+
+/*.
+    .warning {
+        background-color: yellow;
+        padding: 20px;
+
+        h4 {
+            font-size: 20px;
+            font-family: $headline-font;
+            text-align: center;
+        }
+    }
+} */
+footer {
+  padding: 15px 0;
+  border: 2px solid blue; }
+  footer p {
+    text-align: center;
+    font-size: 16px; }
 
 /*# sourceMappingURL=mobile.css.map */

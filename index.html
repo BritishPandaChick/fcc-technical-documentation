@@ -28,6 +28,7 @@
     <main id="main-doc">
       <div class="full-width">
         <h2>Introducing JSX</h2>
+
         <section class="main-section" id="Introducing_JSX">
           <header>Introducing JSX</header>
           <ul>
@@ -37,7 +38,7 @@
           
           <p>Consider this variable declaration:</p>
           <div class="code">
-            <pre><code>const element=&lt;h1&gt;Hello, world!&lt;/h1&gt;;</code></pre>
+            <pre><code>const element = &lt;h1&gt;Hello, world!&lt;/h1&gt;;</code></pre>
           </div>
           <p>This funny tag syntax is neither a string nor HTML. It is called JSX, and it is a syntax extension to JavaScript. We recommend using it with React to describe what the UI should look like. JSX may remind you of a template language, but it comes with the full power of JavaScript.</p>
           <p>JSX produces React “elements”. Below, you can find the basics of JSX necessary to get you started.</p>
@@ -145,17 +146,19 @@
           <p>JSX tags may contain children:</p>
           <div class="code">
             <pre><code>const element = (</code></pre>
-            <pre><code></code></pre>
-              
-                <div>
-                  <h1>Hello!</h1>
-                  <h2>Good to see you here.</h2>
-                </div>
-              );
-          </div>              
+            <pre><code>&lt;div&gt;</code></pre>
+            <pre><code>&lt;h1&gt;Hello!&lt;/h1&gt;</code></pre>
+            <pre><code>&lt;h2&gt;Good to see you here.&lt;/h2&gt;</code></pre>
+            <pre><code>&lt;/div&gt;</code></pre>
+            <pre><code>);</code></pre>             
+          </div>
         </section>
       </div>      
     </main>
+
+    <footer>
+      <p>&copy; 2018 - 2022, Sarah Bartley | All Rights Reserved</p>
+    </footer>
     
     <!-- FreeCodeCamp Testing -->
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>

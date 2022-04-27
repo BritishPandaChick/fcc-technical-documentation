@@ -1,3 +1,32 @@
+/*=== Sass Variables === */
+/*== Base Styles ==*/
+body {
+  font-family: "Courier New", serif;
+  font-size: 20px;
+  color: #333;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
 
+/*== Grid System ==*/
+.full-width {
+  width: 100%;
+  margin: 0 auto; }
+
+/*== Navbar ==*/
+#navbar {
+  border: 2px solid blue;
+  padding: 40px 0;
+  height: 350px; }
+  #navbar header {
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    font-size: 35px; }
+  #navbar ul li {
+    list-style-type: none;
+    padding: 15px; }
+  #navbar ul li a {
+    text-decoration: none;
+    color: #333; }
 
 /*# sourceMappingURL=style.css.map */

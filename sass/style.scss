@@ -1,0 +1,43 @@
+/*=== Sass Variables === */
+$headline-font: "Arial", sans-serif;
+$main-font: "Courier New", serif;
+$black: #333;
+
+/*== Base Styles ==*/ 
+body {
+    font-family: $main-font;
+    font-size: 20px;
+    color: $black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/*== Grid System ==*/ 
+.full-width {
+    width: 100%; 
+    margin: 0 auto;
+}
+
+/*== Navbar ==*/ 
+#navbar {
+    border: 2px solid blue; 
+    padding: 40px 0;
+    height: 350px;
+
+    header {
+        text-align: center;
+        font-family: $headline-font;
+        font-size: 35px;
+    }
+
+    ul li {
+        list-style-type: none;
+        padding: 15px;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: $black;
+    }
+}

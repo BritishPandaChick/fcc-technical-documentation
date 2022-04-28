@@ -29,4 +29,154 @@ body {
     text-decoration: none;
     color: #333; }
 
+/*== Sections == */
+#main-doc h2 {
+  font-family: "Arial", sans-serif;
+  font-size: 35px;
+  text-align: center;
+  padding-top: 40px; }
+
+#Introducing_JSX {
+  padding: 40px 0;
+  width: 100%; }
+  #Introducing_JSX header {
+    font-family: "Arial", sans-serif;
+    font-size: 30px;
+    text-align: center; }
+  #Introducing_JSX ul {
+    padding: 15px 45px; }
+    #Introducing_JSX ul li {
+      font-size: 20px;
+      line-height: 32px;
+      font-family: "Courier New", serif; }
+  #Introducing_JSX p {
+    line-height: 32px;
+    padding: 15px; }
+  #Introducing_JSX .code {
+    background-color: #333;
+    color: lightgreen;
+    padding: 5px;
+    width: 95%; }
+    #Introducing_JSX .code code {
+      font-size: 15px;
+      font-family: monospace; }
+  #Introducing_JSX .sub-section h4 {
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    font-size: 25px; }
+
+#Embedding_Expressions_in_JSX {
+  padding: 40px 0;
+  width: 100%; }
+  #Embedding_Expressions_in_JSX header {
+    font-family: "Arial", sans-serif;
+    font-size: 30px;
+    text-align: center; }
+  #Embedding_Expressions_in_JSX ul {
+    padding: 15px 45px; }
+    #Embedding_Expressions_in_JSX ul li {
+      font-size: 20px;
+      line-height: 32px;
+      font-family: "Courier New", serif; }
+  #Embedding_Expressions_in_JSX p {
+    line-height: 32px;
+    padding: 15px; }
+  #Embedding_Expressions_in_JSX .code {
+    background-color: #333;
+    color: lightgreen;
+    padding: 5px;
+    width: 95%; }
+    #Embedding_Expressions_in_JSX .code code {
+      font-size: 15px;
+      font-family: monospace; }
+
+#JSX_is_an_Expression_Too {
+  padding: 40px 0;
+  width: 100%; }
+  #JSX_is_an_Expression_Too header {
+    font-family: "Arial", sans-serif;
+    font-size: 30px;
+    text-align: center; }
+  #JSX_is_an_Expression_Too ul {
+    padding: 15px 45px; }
+    #JSX_is_an_Expression_Too ul li {
+      font-size: 20px;
+      line-height: 32px;
+      font-family: "Courier New", serif; }
+  #JSX_is_an_Expression_Too p {
+    line-height: 32px;
+    padding: 15px; }
+  #JSX_is_an_Expression_Too .code {
+    background-color: #333;
+    color: lightgreen;
+    padding: 5px;
+    width: 95%; }
+    #JSX_is_an_Expression_Too .code code {
+      font-size: 15px;
+      font-family: monospace; }
+
+#Specifying_Attributes_with_JSX {
+  padding: 40px 0;
+  width: 100%; }
+  #Specifying_Attributes_with_JSX header {
+    font-family: "Arial", sans-serif;
+    font-size: 30px;
+    text-align: center; }
+  #Specifying_Attributes_with_JSX ul {
+    padding: 15px 45px; }
+    #Specifying_Attributes_with_JSX ul li {
+      font-size: 20px;
+      line-height: 32px;
+      font-family: "Courier New", serif; }
+  #Specifying_Attributes_with_JSX p {
+    line-height: 32px;
+    padding: 15px; }
+  #Specifying_Attributes_with_JSX .code {
+    background-color: #333;
+    color: lightgreen;
+    padding: 5px; }
+    #Specifying_Attributes_with_JSX .code code {
+      font-size: 15px;
+      font-family: monospace; }
+  #Specifying_Attributes_with_JSX .warning {
+    background-color: yellow;
+    padding: 20px; }
+    #Specifying_Attributes_with_JSX .warning h4 {
+      font-size: 25px;
+      font-family: "Arial", sans-serif;
+      text-align: center; }
+
+#Specifying_Children_with_JSX {
+  padding: 40px 0;
+  width: 100%; }
+  #Specifying_Children_with_JSX header {
+    font-family: "Arial", sans-serif;
+    font-size: 30px;
+    text-align: center; }
+  #Specifying_Children_with_JSX ul {
+    padding: 15px 45px; }
+    #Specifying_Children_with_JSX ul li {
+      font-size: 20px;
+      line-height: 32px;
+      font-family: "Courier New", serif; }
+  #Specifying_Children_with_JSX p {
+    line-height: 32px;
+    padding: 15px; }
+  #Specifying_Children_with_JSX .code {
+    background-color: #333;
+    color: lightgreen;
+    padding: 5px;
+    width: 95%; }
+    #Specifying_Children_with_JSX .code code {
+      font-size: 15px;
+      font-family: monospace; }
+
+/* === Footer === */
+footer {
+  padding: 15px 0;
+  border: 2px solid blue; }
+  footer p {
+    text-align: center;
+    font-size: 16px; }
+
 /*# sourceMappingURL=style.css.map */

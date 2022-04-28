@@ -22,7 +22,7 @@ body {
 #navbar {
     border: 2px solid blue; 
     padding: 40px 0;
-    height: 400px;
+    height: 500px;
 
     header {
         text-align: center;
@@ -49,7 +49,7 @@ body {
     padding-top: 40px;
 }
 
-#Introducing_JSX {
+.main-section {
     padding: 40px 0;
     width: 100%;
 
@@ -72,16 +72,17 @@ body {
     p {
         line-height: 32px;
         padding: 15px;
-    } 
+    }
+}
 
+#Introducing_JSX {
     .code {
         background-color: $black;
         color: lightgreen;
-        padding: 5px;
-        width: 95%;
+        padding: 15px;
 
         code {
-            font-size: 15px;
+            font-size: 18px;
             font-family: monospace;
         }
     }
@@ -96,38 +97,13 @@ body {
 }
 
 #Embedding_Expressions_in_JSX {
-    padding: 40px 0;
-    width: 100%;
-
-    header {
-        font-family: $headline-font;
-        font-size: 25px;
-        text-align: center;
-    }
-
-    ul {
-        padding: 15px 45px;
-
-        li {
-            font-size: 20px;
-            line-height: 32px;
-            font-family: $main-font;
-        }
-    }
-
-    p {
-        line-height: 32px;
-        padding: 15px;
-    } 
-
     .code {
         background-color: $black;
         color: lightgreen;
-        padding: 5px;
-        width: 95%;
+        padding: 15px;
 
         code {
-            font-size: 15px;
+            font-size: 18px;
             font-family: monospace;
         }
     }
@@ -162,7 +138,7 @@ body {
         background-color: $black;
         color: lightgreen;
         padding: 5px;
-        width: 95%;
+        width: 100%;
 
         code {
             font-size: 15px;
@@ -200,6 +176,7 @@ body {
         background-color: $black;
         color: lightgreen;
         padding: 5px;
+        width: 100%;
 
         code {
             font-size: 15px;
@@ -248,7 +225,7 @@ body {
         background-color: $black;
         color: lightgreen;
         padding: 5px;
-        width: 95%;
+        width: 100%;
 
         code {
             font-size: 15px;

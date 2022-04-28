@@ -16,7 +16,7 @@ body {
 #navbar {
   border: 2px solid blue;
   padding: 40px 0;
-  height: 400px; }
+  height: 500px; }
   #navbar header {
     text-align: center;
     font-family: "Arial", sans-serif;
@@ -35,59 +35,42 @@ body {
   text-align: center;
   padding-top: 40px; }
 
-#Introducing_JSX {
+.main-section {
   padding: 40px 0;
   width: 100%; }
-  #Introducing_JSX header {
+  .main-section header {
     font-family: "Arial", sans-serif;
     font-size: 25px;
     text-align: center; }
-  #Introducing_JSX ul {
+  .main-section ul {
     padding: 15px 45px; }
-    #Introducing_JSX ul li {
+    .main-section ul li {
       font-size: 20px;
       line-height: 32px;
       font-family: "Courier New", serif; }
-  #Introducing_JSX p {
+  .main-section p {
     line-height: 32px;
     padding: 15px; }
-  #Introducing_JSX .code {
-    background-color: #333;
-    color: lightgreen;
-    padding: 5px;
-    width: 95%; }
-    #Introducing_JSX .code code {
-      font-size: 15px;
-      font-family: monospace; }
-  #Introducing_JSX .sub-section h4 {
-    text-align: center;
-    font-family: "Arial", sans-serif;
-    font-size: 20px; }
 
-#Embedding_Expressions_in_JSX {
-  padding: 40px 0;
-  width: 100%; }
-  #Embedding_Expressions_in_JSX header {
-    font-family: "Arial", sans-serif;
-    font-size: 25px;
-    text-align: center; }
-  #Embedding_Expressions_in_JSX ul {
-    padding: 15px 45px; }
-    #Embedding_Expressions_in_JSX ul li {
-      font-size: 20px;
-      line-height: 32px;
-      font-family: "Courier New", serif; }
-  #Embedding_Expressions_in_JSX p {
-    line-height: 32px;
-    padding: 15px; }
-  #Embedding_Expressions_in_JSX .code {
-    background-color: #333;
-    color: lightgreen;
-    padding: 5px;
-    width: 95%; }
-    #Embedding_Expressions_in_JSX .code code {
-      font-size: 15px;
-      font-family: monospace; }
+#Introducing_JSX .code {
+  background-color: #333;
+  color: lightgreen;
+  padding: 15px; }
+  #Introducing_JSX .code code {
+    font-size: 18px;
+    font-family: monospace; }
+#Introducing_JSX .sub-section h4 {
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  font-size: 20px; }
+
+#Embedding_Expressions_in_JSX .code {
+  background-color: #333;
+  color: lightgreen;
+  padding: 15px; }
+  #Embedding_Expressions_in_JSX .code code {
+    font-size: 18px;
+    font-family: monospace; }
 
 #JSX_is_an_Expression_Too {
   padding: 40px 0;
@@ -109,7 +92,7 @@ body {
     background-color: #333;
     color: lightgreen;
     padding: 5px;
-    width: 95%; }
+    width: 100%; }
     #JSX_is_an_Expression_Too .code code {
       font-size: 15px;
       font-family: monospace; }
@@ -133,7 +116,8 @@ body {
   #Specifying_Attributes_with_JSX .code {
     background-color: #333;
     color: lightgreen;
-    padding: 5px; }
+    padding: 5px;
+    width: 100%; }
     #Specifying_Attributes_with_JSX .code code {
       font-size: 15px;
       font-family: monospace; }
@@ -165,7 +149,7 @@ body {
     background-color: #333;
     color: lightgreen;
     padding: 5px;
-    width: 95%; }
+    width: 100%; }
     #Specifying_Children_with_JSX .code code {
       font-size: 15px;
       font-family: monospace; }

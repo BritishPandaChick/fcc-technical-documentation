@@ -6,7 +6,7 @@
     <title>React Technical Documentation Page</title>
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" media="screen and (min-width: 1025px)" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" media="screen and (min-width: 1025px)" type="text/css" href="css/style.css">
     <link href="css/mobile.css" media="screen and (max-width: 640px)" rel="stylesheet">
     <link href="css/tablet.css" media="screen and (min-width: 641px) and (max-width: 1024px)" rel="stylesheet">
   </head>
@@ -38,7 +38,7 @@
           
           <p>Consider this variable declaration:</p>
           <div class="code">
-            <pre><code>const element = &lt;h1&gt;Hello, world!&lt;/h1&gt;;</code></pre>
+            <code>const element = &lt;h1&gt;Hello, world!&lt;/h1&gt;;</code>
           </div>
           <p>This funny tag syntax is neither a string nor HTML. It is called JSX, and it is a syntax extension to JavaScript. We recommend using it with React to describe what the UI should look like. JSX may remind you of a template language, but it comes with the full power of JavaScript.</p>
           <p>JSX produces React “elements”. Below, you can find the basics of JSX necessary to get you started.</p>
@@ -60,26 +60,40 @@
           <p>In the example below, we declare a variable called name and then use it inside JSX by wrapping it in curly braces:</p>
           
           <div class="code">
-            <pre><code>const name = 'Josh Perez';</code></pre>
-            <pre><code>const element = &lt;h1&gt;Hello, {name}&lt;/h1&gt;;</code></pre>
+            <code>const name = 'Josh Perez';</code>
+            <br>
+            <code>const element = &lt;h1&gt;Hello, {name}&lt;/h1&gt;;</code>
           </div>
 
           <p>You can put any valid JavaScript expression inside the curly braces in JSX. For example, 2 + 2, user.firstName, or formatName(user) are all valid JavaScript expressions.</p>
           <p>In the example below, we embed the result of calling a JavaScript function, formatName(user), into an h1 element.</p>
           
           <div class="code">
-            <pre><code>function formatName(user) {</code></pre>
-            <pre><code> return user.firstName + ' ' + user.lastName;</code></pre> 
-            <pre><code>}</code></pre>
+            <div class="code-section">
+              <code>function formatName(user) {</code>
+                <br>
+                <code>&nbsp;return user.firstName + ' ' + user.lastName;</code>
+                <br> 
+                <code>}</code>
+            </div>
             <br>
-            <pre><code>const user = {</code></pre>
-            <pre><code> firstName: 'Harper',</code></pre>
-            <pre><code> lastName: 'Perez'</code></pre>
-            <pre><code>};</code></pre>
+            <div class="code-section">
+              <code>const user = {</code>
+                <br>
+                <code>&nbsp;firstName: 'Harper',</code>
+                <br>
+                <code>&nbsp;lastName: 'Perez'</code>
+                <br>
+                <code>};</code>
+            </div>
             <br>
-            <pre><code>const element = (</code></pre>
-              <pre><code>&lt;h1&gt;Hello, {formatName(user)}!&lt;/h1&gt;</code></pre>
-              <pre><code>);</code></pre>
+            <div class="code-section">
+              <code>const element = (</code>
+              <br>
+              <code>&nbsp;&lt;h1&gt;Hello, {formatName(user)}!&lt;/h1&gt;</code>
+              <br>
+              <code>);</code>
+            </div>
           </div> 
 
           <p>We split JSX over multiple lines for readability. While it isn’t required, when doing this, we also recommend wrapping it in parentheses to avoid the pitfalls of automatic semicolon insertion.</p>
@@ -96,12 +110,17 @@
           <p>This means that you can use JSX inside of if statements and for loops, assign it to variables, accept it as arguments, and return it from functions:</p>
             
           <div class="code">
-            <pre><code>function getGreeting(user) {</code></pre>
-            <pre><code> if (user) {</code></pre>    
-            <pre><code>   return &lt;h1&gt;Hello, {formatName(user)}&lt;/h1&gt;;</code></pre>       
-            <pre><code> }</code></pre>   
-            <pre><code>   return &lt;h1&gt;Hello, Stranger.&lt;/h1&gt;;</code></pre>   
-            <pre><code> }</code></pre>  
+            <code>function getGreeting(user) {</code>
+            <br>
+            <code> if (user) {</code>
+            <br>   
+            <code>   return &lt;h1&gt;Hello, {formatName(user)}&lt;/h1&gt;;</code>
+            <br>     
+            <code> }</code>
+            <br>
+            <code>   return &lt;h1&gt;Hello, Stranger.&lt;/h1&gt;;</code>
+            <br>   
+            <code>}</code> 
           </div>
         </section>
   
@@ -115,14 +134,14 @@
           <p>You may use quotes to specify string literals as attributes:</p>
           
           <div class="code">
-            <pre><code>const element = &lt;a href="https://www.reactjs.org"&gt;
-              link&lt;/a&gt;;</code></pre>
+            <code>const element = &lt;a href="https://www.reactjs.org"&gt;
+              link&lt;/a&gt;;</code>
           </div>
 
           <p>You may also use curly braces to embed a JavaScript expression in an attribute:</p>
 
           <div class="code">
-            <pre><code>const element = &lt;img src={user.avatarUrl}&gt;</img>;</code></pre>
+            <code>const element = &lt;img src={user.avatarUrl}&gt;</img>;</code>
           </div>           
   
           <p>Don’t put quotes around curly braces when embedding a JavaScript expression in an attribute. You should either use quotes (for string values) or curly braces (for expressions), but not both in the same attribute.</p>
@@ -148,12 +167,17 @@
           
           <p>JSX tags may contain children:</p>
           <div class="code">
-            <pre><code>const element = (</code></pre>
-            <pre><code> &lt;div&gt;</code></pre>
-            <pre><code>   &lt;h1&gt;Hello!&lt;/h1&gt;</code></pre>
-            <pre><code>   &lt;h2&gt;Good to see you here.&lt;/h2&gt;</code></pre>
-            <pre><code> &lt;/div&gt;</code></pre>
-            <pre><code>);</code></pre>             
+            <code>const element = (</code>
+            <br>
+            <code> &lt;div&gt;</code>
+            <br>
+            <code>   &lt;h1&gt;Hello!&lt;/h1&gt;</code>
+            <br>
+            <code>   &lt;h2&gt;Good to see you here.&lt;/h2&gt;</code>
+            <br>
+            <code> &lt;/div&gt;</code>
+            <br>
+            <code>);</code>             
           </div>
         </section>
       </div>      

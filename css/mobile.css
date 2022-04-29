@@ -52,107 +52,26 @@ body {
     line-height: 32px;
     padding: 15px; }
 
-#Introducing_JSX .code {
+.code {
   background-color: #333;
   color: lightgreen;
   padding: 15px; }
-  #Introducing_JSX .code code {
+  .code code {
     font-size: 18px;
     font-family: monospace; }
-#Introducing_JSX .sub-section h4 {
+
+.sub-section h4 {
   text-align: center;
   font-family: "Arial", sans-serif;
   font-size: 20px; }
 
-#Embedding_Expressions_in_JSX .code {
-  background-color: #333;
-  color: lightgreen;
-  padding: 15px; }
-  #Embedding_Expressions_in_JSX .code code {
-    font-size: 18px;
-    font-family: monospace; }
-
-#JSX_is_an_Expression_Too {
-  padding: 40px 0;
-  width: 100%; }
-  #JSX_is_an_Expression_Too header {
+.warning {
+  background-color: yellow;
+  padding: 20px; }
+  .warning h4 {
+    font-size: 20px;
     font-family: "Arial", sans-serif;
-    font-size: 25px;
     text-align: center; }
-  #JSX_is_an_Expression_Too ul {
-    padding: 15px 45px; }
-    #JSX_is_an_Expression_Too ul li {
-      font-size: 20px;
-      line-height: 32px;
-      font-family: "Courier New", serif; }
-  #JSX_is_an_Expression_Too p {
-    line-height: 32px;
-    padding: 15px; }
-  #JSX_is_an_Expression_Too .code {
-    background-color: #333;
-    color: lightgreen;
-    padding: 5px;
-    width: 100%; }
-    #JSX_is_an_Expression_Too .code code {
-      font-size: 15px;
-      font-family: monospace; }
-
-#Specifying_Attributes_with_JSX {
-  padding: 40px 0;
-  width: 100%; }
-  #Specifying_Attributes_with_JSX header {
-    font-family: "Arial", sans-serif;
-    font-size: 25px;
-    text-align: center; }
-  #Specifying_Attributes_with_JSX ul {
-    padding: 15px 45px; }
-    #Specifying_Attributes_with_JSX ul li {
-      font-size: 20px;
-      line-height: 32px;
-      font-family: "Courier New", serif; }
-  #Specifying_Attributes_with_JSX p {
-    line-height: 32px;
-    padding: 15px; }
-  #Specifying_Attributes_with_JSX .code {
-    background-color: #333;
-    color: lightgreen;
-    padding: 5px;
-    width: 100%; }
-    #Specifying_Attributes_with_JSX .code code {
-      font-size: 15px;
-      font-family: monospace; }
-  #Specifying_Attributes_with_JSX .warning {
-    background-color: yellow;
-    padding: 20px; }
-    #Specifying_Attributes_with_JSX .warning h4 {
-      font-size: 20px;
-      font-family: "Arial", sans-serif;
-      text-align: center; }
-
-#Specifying_Children_with_JSX {
-  padding: 40px 0;
-  width: 100%; }
-  #Specifying_Children_with_JSX header {
-    font-family: "Arial", sans-serif;
-    font-size: 25px;
-    text-align: center; }
-  #Specifying_Children_with_JSX ul {
-    padding: 15px 45px; }
-    #Specifying_Children_with_JSX ul li {
-      font-size: 20px;
-      line-height: 32px;
-      font-family: "Courier New", serif; }
-  #Specifying_Children_with_JSX p {
-    line-height: 32px;
-    padding: 15px; }
-  #Specifying_Children_with_JSX .code {
-    background-color: #333;
-    color: lightgreen;
-    padding: 5px;
-    width: 100%; }
-    #Specifying_Children_with_JSX .code code {
-      font-size: 15px;
-      font-family: monospace; }
 
 /* === Footer === */
 footer {

@@ -75,162 +75,33 @@ body {
     }
 }
 
-#Introducing_JSX {
-    .code {
-        background-color: $black;
-        color: lightgreen;
-        padding: 15px;
+.code {
+    background-color: $black;
+    color: lightgreen;
+    padding: 15px;
 
-        code {
-            font-size: 18px;
-            font-family: monospace;
-        }
-    }
-
-    .sub-section {
-        h4 {
-            text-align: center;
-            font-family: $headline-font;
-            font-size: 20px;
-        }
+    code {
+        font-size: 18px;
+        font-family: monospace;
     }
 }
 
-#Embedding_Expressions_in_JSX {
-    .code {
-        background-color: $black;
-        color: lightgreen;
-        padding: 15px;
-
-        code {
-            font-size: 18px;
-            font-family: monospace;
-        }
-    }
-}
-
-#JSX_is_an_Expression_Too {
-    padding: 40px 0;
-    width: 100%;
-
-    header {
-        font-family: $headline-font;
-        font-size: 25px;
+.sub-section {
+    h4 {
         text-align: center;
-    }
-
-    ul {
-        padding: 15px 45px;
-
-        li {
-            font-size: 20px;
-            line-height: 32px;
-            font-family: $main-font;
-        }
-    }
-
-    p {
-        line-height: 32px;
-        padding: 15px;
-    } 
-
-    .code {
-        background-color: $black;
-        color: lightgreen;
-        padding: 5px;
-        width: 100%;
-
-        code {
-            font-size: 15px;
-            font-family: monospace;
-        }
+        font-family: $headline-font;
+        font-size: 20px;
     }
 }
 
-#Specifying_Attributes_with_JSX {
-    padding: 40px 0;
-    width: 100%;
+.warning {
+    background-color: yellow;
+    padding: 20px;
 
-    header {
+    h4 {
+        font-size: 20px;
         font-family: $headline-font;
-        font-size: 25px;
         text-align: center;
-    }
-
-    ul {
-        padding: 15px 45px;
-
-        li {
-            font-size: 20px;
-            line-height: 32px;
-            font-family: $main-font;
-        }
-    }
-
-    p {
-        line-height: 32px;
-        padding: 15px;
-    } 
-
-    .code {
-        background-color: $black;
-        color: lightgreen;
-        padding: 5px;
-        width: 100%;
-
-        code {
-            font-size: 15px;
-            font-family: monospace;
-        }
-    }
-
-    .warning {
-        background-color: yellow;
-        padding: 20px;
-
-        h4 {
-            font-size: 20px;
-            font-family: $headline-font;
-            text-align: center;
-        }
-    }
-}
-
-#Specifying_Children_with_JSX {
-    padding: 40px 0;
-    width: 100%;
-
-    header {
-        font-family: $headline-font;
-        font-size: 25px;
-        text-align: center;
-    }
-
-    ul {
-        padding: 15px 45px;
-
-        li {
-            font-size: 20px;
-            line-height: 32px;
-            font-family: $main-font;
-        }
-    }
-
-    p {
-        line-height: 32px;
-        padding: 15px;
-    } 
-
-    .code {
-        background-color: $black;
-        color: lightgreen;
-        padding: 5px;
-        width: 100%;
-
-        code {
-            font-size: 15px;
-            font-family: monospace;
-        }
     }
 }
 

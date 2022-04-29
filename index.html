@@ -112,13 +112,13 @@
           <div class="code">
             <code>function getGreeting(user) {</code>
             <br>
-            <code> if (user) {</code>
+            <code>&nbsp;if (user) {</code>
             <br>   
-            <code>   return &lt;h1&gt;Hello, {formatName(user)}&lt;/h1&gt;;</code>
+            <code>&nbsp; return &lt;h1&gt;Hello, {formatName(user)}&lt;/h1&gt;;</code>
             <br>     
-            <code> }</code>
+            <code>&nbsp;}</code>
             <br>
-            <code>   return &lt;h1&gt;Hello, Stranger.&lt;/h1&gt;;</code>
+            <code>&nbsp;return &lt;h1&gt;Hello, Stranger.&lt;/h1&gt;;</code>
             <br>   
             <code>}</code> 
           </div>
@@ -134,8 +134,7 @@
           <p>You may use quotes to specify string literals as attributes:</p>
           
           <div class="code">
-            <code>const element = &lt;a href="https://www.reactjs.org"&gt;
-              link&lt;/a&gt;;</code>
+            <code>const element = &lt;a href = "https://www.reactjs.org"&gt;link&lt;/a&gt;;</code>
           </div>
 
           <p>You may also use curly braces to embed a JavaScript expression in an attribute:</p>
@@ -162,20 +161,20 @@
           <p>If a tag is empty, you may close it immediately with />, like XML:</p>
 
           <div class="code">
-            <pre><code>const element = &lt;img src={user.avatarUrl} /&gt;;</code></pre>
+            <code>const element = &lt;img src={user.avatarUrl} /&gt;;</code>
           </div>
           
           <p>JSX tags may contain children:</p>
           <div class="code">
             <code>const element = (</code>
             <br>
-            <code> &lt;div&gt;</code>
+            <code>&nbsp;&lt;div&gt;</code>
             <br>
-            <code>   &lt;h1&gt;Hello!&lt;/h1&gt;</code>
+            <code>&nbsp; &lt;h1&gt;Hello!&lt;/h1&gt;</code>
             <br>
-            <code>   &lt;h2&gt;Good to see you here.&lt;/h2&gt;</code>
+            <code>&nbsp; &lt;h2&gt;Good to see you here.&lt;/h2&gt;</code>
             <br>
-            <code> &lt;/div&gt;</code>
+            <code>&nbsp;&lt;/div&gt;</code>
             <br>
             <code>);</code>             
           </div>

@@ -23,7 +23,11 @@ body {
 #navbar {
     border: 2px solid blue; 
     padding: 40px 0;
-    width: 100%;
+    width: 30%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
 
     header {
         text-align: center;

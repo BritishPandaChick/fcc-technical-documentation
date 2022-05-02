@@ -1,5 +1,5 @@
 # React.js Technical Documentation Page
-Free Code Camp Responsive Web Design Projects Technical Documentation Page.
+freecodecamp Responsive Web Design Projects Technical Documentation Page.
 
 ## Dependencies 
 * HTML
@@ -16,3 +16,4 @@ I will not be accepting pull requests.
 * [reactjs.org](https://reactjs.org/)
 * Sass
 * CSS-Tricks
+* Coolors

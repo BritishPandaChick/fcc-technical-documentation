@@ -1,13 +1,16 @@
 /*=== Sass Variables === */
 $headline-font: "Arial", sans-serif;
 $main-font: "Courier New", serif;
-$black: #333;
+$black: #201A23;
+$dark-background: #2E2532;
+$white: #FBFBFB;
+$magenta: #9E4770;
 
 /*== Base Styles ==*/ 
 body {
     font-family: $main-font;
     font-size: 20px;
-    color: $black;
+    color: $white;
     display: flex;
     flex-direction: column;
 }
@@ -18,35 +21,70 @@ body {
     margin: 0 auto;
 }
 
+/* == Media Queries ==*/ 
+@media (max-height: 300px) {
+    body {
+        display: flex;
+        flex-direction: flex-column;
+    }
+
+    header {
+        font-size: 30px;
+    } 
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+}
+
 /*== Navbar ==*/ 
 #navbar {
-    border: 2px solid blue; 
+    background-color: $magenta;
     padding: 40px 0;
-    height: 500px;
+    height: 370px;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
 
     header {
         text-align: center;
         font-family: $headline-font;
         font-size: 35px;
+        color: $white;
     }
 
     ul li {
         list-style-type: none;
         padding: 15px;
+        color: $white;
     }
 
     ul li a {
         text-decoration: none;
-        color: $black;
+        color: $white;
     }
 }
 
 /*== Sections == */ 
-#main-doc h2 {
-    font-family: $headline-font;
-    font-size: 30px;
-    text-align: center;
-    padding-top: 40px;
+#main-doc {
+    margin-top: 400px;
+    padding: 40px;
+    background-color: $black;
+
+    h2 {
+        font-family: $headline-font;
+        font-size: 30px;
+        text-align: center;
+        padding-top: 40px;
+    }
 }
 
 .main-section {
@@ -76,8 +114,8 @@ body {
 }
 
 .code {
-    background-color: $black;
-    color: lightgreen;
+    background-color: $white;
+    color: $black;
     padding: 15px;
 
     code {
@@ -95,20 +133,25 @@ body {
 }
 
 .warning {
-    background-color: yellow;
+    background-color: $white;
     padding: 20px;
 
     h4 {
         font-size: 20px;
         font-family: $headline-font;
         text-align: center;
+        color: $black;
+    }
+
+    p {
+        color: $black;
     }
 }
 
 /* === Footer === */
 footer {
     padding: 15px 0;
-    border: 2px solid blue;
+    background-color: $magenta;
 
     p {
         text-align: center;

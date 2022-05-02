@@ -3,7 +3,7 @@
 body {
   font-family: "Courier New", serif;
   font-size: 20px;
-  color: #333;
+  color: #FBFBFB;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; }
@@ -15,7 +15,7 @@ body {
 
 /*== Navbar ==*/
 #navbar {
-  border: 2px solid blue;
+  background-color: #9E4770;
   padding: 40px 0;
   width: 30%;
   height: 100%;
@@ -31,14 +31,18 @@ body {
     padding: 15px; }
   #navbar ul li a {
     text-decoration: none;
-    color: #333; }
+    color: #FBFBFB; }
 
 /*== Sections == */
-#main-doc h2 {
-  font-family: "Arial", sans-serif;
-  font-size: 35px;
-  text-align: center;
-  padding-top: 40px; }
+#main-doc {
+  margin-left: 410px;
+  padding: 20px 40px;
+  background-color: #201A23; }
+  #main-doc h2 {
+    font-family: "Arial", sans-serif;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 40px; }
 
 .main-section {
   padding: 40px 0;
@@ -58,8 +62,8 @@ body {
     padding: 15px; }
 
 .code {
-  background-color: #333;
-  color: lightgreen;
+  background-color: #FBFBFB;
+  color: #201A23;
   padding: 15px; }
   .code code {
     font-size: 20px;
@@ -71,18 +75,22 @@ body {
   font-size: 25px; }
 
 .warning {
-  background-color: yellow;
+  background-color: #FBFBFB;
   padding: 20px; }
   .warning h4 {
     font-size: 25px;
     font-family: "Arial", sans-serif;
-    text-align: center; }
+    text-align: center;
+    color: #201A23; }
+  .warning p {
+    color: #201A23; }
 
 /* === Footer === */
 footer {
   padding: 15px 0;
-  border: 2px solid blue;
-  width: 100%; }
+  width: 100%;
+  margin-left: 410px;
+  background-color: #9E4770; }
   footer p {
     text-align: center;
     font-size: 16px; }

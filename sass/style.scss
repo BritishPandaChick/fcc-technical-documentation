@@ -1,13 +1,16 @@
 /*=== Sass Variables === */
 $headline-font: "Arial", sans-serif;
 $main-font: "Courier New", serif;
-$black: #333;
+$black: #201A23;
+$dark-background: #2E2532;
+$white: #FBFBFB;
+$magenta: #9E4770;
 
 /*== Base Styles ==*/ 
 body {
     font-family: $main-font;
     font-size: 20px;
-    color: $black;
+    color: $white;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -21,7 +24,7 @@ body {
 
 /*== Navbar ==*/ 
 #navbar {
-    border: 2px solid blue; 
+    background-color: $magenta; 
     padding: 40px 0;
     width: 30%;
     height: 100%;
@@ -42,16 +45,22 @@ body {
 
     ul li a {
         text-decoration: none;
-        color: $black;
+        color: $white;
     }
 }
 
 /*== Sections == */ 
-#main-doc h2 {
-    font-family: $headline-font;
-    font-size: 35px;
-    text-align: center;
-    padding-top: 40px;
+#main-doc {
+    margin-left: 410px;
+    padding: 20px 40px;
+    background-color: $black;
+
+    h2 {
+        font-family: $headline-font;
+        font-size: 35px;
+        text-align: center;
+        padding-top: 40px;
+    }    
 }
 
 .main-section {
@@ -81,8 +90,8 @@ body {
 }
 
 .code {
-    background-color: $black;
-    color: lightgreen;
+    background-color: $white;
+    color: $black;
     padding: 15px;
 
     code {
@@ -100,21 +109,27 @@ body {
 }
 
 .warning {
-    background-color: yellow;
+    background-color: $white;
     padding: 20px;
 
     h4 {
         font-size: 25px;
         font-family: $headline-font;
         text-align: center;
+        color: $black;
+    }
+
+    p {
+        color: $black;
     }
 }
 
 /* === Footer === */
 footer {
     padding: 15px 0;
-    border: 2px solid blue;
     width: 100%;
+    margin-left: 410px;
+    background-color: $magenta;
 
     p {
         text-align: center;

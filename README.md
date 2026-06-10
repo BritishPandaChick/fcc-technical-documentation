@@ -1,8 +1,14 @@
-# Bootstrap Technical Documentation Page
-Free Code Camp Responsive Web Design Projects Technical Documentation Page.Made with HTML, CSS, and Bootstrap.
+# Technical Documentation Page
+freecodecamp technical documentation page for the responsive web design certification
+
+## Tech Stack
+- HTML
+- CSS
+- Bootstrap
 
 ## Instructions
-Clone or download zip file. Open index.html file in your browser.
+1. Clone or download zip file. 
+2. Open index.html file in your browser.
 
-## Contributing
-Please contact me if you would like to contribute to this application.
+## Acknowledgements
+* freecodecamp
